@@ -80,12 +80,12 @@ const ProductTable = ({products, inStockOnly, filterText}) => {
     <>
     <div className="px-3.5 ">
             {
-                filterText !== '' ? <p>Se encontraron {cantProductos} productos</p> :
+                filterText !== '' ? <p className="text-amber-600">Se encontraron <span className="text-gray-700 font-bold">{cantProductos}</span> productos</p> :
                 <template></template>
             }
     </div>
 
-    <table className="border border-collapse rounded mx-2.5 min-w-2xs bg-gray-400">
+    <table className="border-2 border-collapse rounded mx-2.5 min-w-2xs bg-gray-400">
         <thead>
             <tr>
                 <th className="px-4 py-2 text-left text-2xl">Name</th>

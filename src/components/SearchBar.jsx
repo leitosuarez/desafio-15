@@ -23,7 +23,7 @@ const SearchBar = ({setInStockOnly ,inStockOnly,filterText, setFilterText}) => {
                 placeholder="Buscar"
                 value={filterText}
                 onChange={(e)=> handleChange(e.target.value)}
-                className="border rounded p-1.5 min-w-2xs"
+                className="border-2 border-amber-600 outline-0 rounded p-2 min-w-2xs bg-gray-400"
                 />
             </div>
             <div>
@@ -33,7 +33,7 @@ const SearchBar = ({setInStockOnly ,inStockOnly,filterText, setFilterText}) => {
                     onChange={()=> {handleCheck()}}
                 />
                 <label htmlFor=""
-                className="ml-1"
+                className="ml-1 text-amber-600"
                 >Only Show Products In Stock
                 </label>
             </div>
